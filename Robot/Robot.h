@@ -26,6 +26,6 @@ class Robot: public IterativeRobot
 		void TestPeriodic();
 		void setMovement(float movementSpeed);
 		void setRotation(float rotationSpeed);
-}
+};
 
 #endif
