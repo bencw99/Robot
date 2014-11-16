@@ -21,6 +21,6 @@ class DriveTrain
 		void setRotation(float rotationSpeed);
 		void stop();
 		void disable();
-}
+};
 
 #endif
