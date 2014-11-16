@@ -1,6 +1,8 @@
 #ifndef DRIVETRAIN_H
 #define DRIVETRAIN_H
-#include "WPILib.h"
+#include <WPILib.h>
+#include <stdlib.h>
+#include <iostream>
 
 class DriveTrain
 {
@@ -10,10 +12,13 @@ class DriveTrain
 		Victor frontLeftVic;
 		Victor frontRIghtVic;
 		
+		float movementSpeed;
+		float rotationSpeed;
 	public:
 		DriveTrain();
-		void setSpeed(float speed);
-		void setRotation(float rotation);
+		void update();
+		void setMovement(float movementSpeed);
+		void setRotation(float rotationSpeed);
 		void stop();
 		void disable();
 }
