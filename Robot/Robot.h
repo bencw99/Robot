@@ -13,7 +13,8 @@ class Robot::public IterativeRobot
 
 	public:
 		Robot();
-		void transferDriveTrainValues();
+		void setMovement(float movementSpeed);
+		void setRotation(float rotationSpeed);
 }
 
 #endif
