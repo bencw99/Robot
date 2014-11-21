@@ -1,66 +1,19 @@
 #include "Robot.h"
 
 Robot::Robot():
-	driveTrain(),
-	HumanController(this)
+	driveTrain()
 {
 	
 }
 
-void Robot::RobotInit()
+void Robot::update()
 {
-
-}
-
-void Robot::AutonomousInit()
-{
-
-}
-
-void Robot::AutonomousPeriodic()
-{
-
-}
-
-void Robot::AutonomousDisabled()
-{
-
-}
-
-void Robot::DisabledInit()
-{
-
-}
-
-void Robot::DisabledPeriodic()
-{
-
-}
-
-void Robot::TeleopInit()
-{
-
-}
-
-void Robot::TeleopPeriodic()
-{
-	humanController.update();
 	driveTrain.update();
 }
 
-void Robot::TeleopDisabled()
+void Robot::disable()
 {
 	driveTrain.disable();
-}
-
-void Robot::TestInit()
-{
-
-}
-
-void Robot::TestPeriodic()
-{
-
 }
 
 void Robot::setMovement(float movementSpeed)

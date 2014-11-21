@@ -9,16 +9,16 @@ HumanController::HumanController(Robot *robot):
 
 void HumanController::update()
 {
-	robot->setMovement(getMovementSpeed());
-	robot->setRotation(getRotationSPeed());
+	robot->setMovement(this->getMovement());
+	robot->setRotation(this->getRotation());
 }
 
-float HumanController::getMovementSpeed()
+double HumanController::getMovement()
 {
 	return movementController.GetY();
 }
 
-float HumanController::getRotationSpeed()
+double HumanController::getRotation()
 {
 	return rotationController.GetX();
 }

@@ -3,27 +3,16 @@
 #include <WPILib.h>
 #include "Constants.h"
 #include "DriveTrain.h"
-#include "HumanController.h"
 
-class Robot: public IterativeRobot
+class Robot
 {
 	private:
 		DriveTrain driveTrain;
-		HumanController humanController;
 
 	public:
 		Robot();
-		void RobotInit();
-		void AutonomousInit();
-		void AutonomousPeriodic();
-		void AutonomousDisabled();
-		void DisabledInit();
-		void DisabledPeriodic();
-		void TeleopInit();
-		void TeleopPeriodic();
-		void TeleopDisabled();
-		void TestInit();
-		void TestPeriodic();
+		void update();
+		void disable();
 		void setMovement(float movementSpeed);
 		void setRotation(float rotationSpeed);
 };

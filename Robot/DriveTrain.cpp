@@ -1,4 +1,5 @@
 #include "DriveTrain.h"
+#include "Constants.h"
 
 DriveTrain::DriveTrain():
 	backLeftVic((uint32_t) PORT_DRIVE_VIC_LEFT_BACK),
@@ -9,7 +10,7 @@ DriveTrain::DriveTrain():
 	stop();
 }
 
-void update()
+void DriveTrain::update()
 {
 	double leftSpeed = min(max(movementSpeed - rotationSpeed, -1), 1);
 	double rightSpeed = min(max(movementSpeed + rotationSpeed, -1), 1);

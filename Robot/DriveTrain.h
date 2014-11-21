@@ -10,10 +10,10 @@ class DriveTrain
 		Victor backLeftVic;
 		Victor backRightVic;
 		Victor frontLeftVic;
-		Victor frontRIghtVic;
+		Victor frontRightVic;
 		
-		float movementSpeed;
-		float rotationSpeed;
+		double movementSpeed;
+		double rotationSpeed;
 	public:
 		DriveTrain();
 		void update();
