@@ -60,6 +60,7 @@ void EBBot::TestInit()
 
 void EBBot::TestPeriodic() 
 {
+	
 }
 
 START_ROBOT_CLASS(EBBot);
