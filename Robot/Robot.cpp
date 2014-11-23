@@ -20,6 +20,7 @@ void Robot::setMovement(float movementSpeed)
 {
 	driveTrain.setMovement(movementSpeed);
 }
+
 void Robot::setRotation(float rotationSpeed)
 {
 	driveTrain.setRotation(rotationSpeed);
